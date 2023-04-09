@@ -97,6 +97,12 @@ The following is the complete list of benchmarks, separated into groups.
   \
   Default repetitions: 20; APACHE2 license, MIT distribution; Supported JVM: 1.8 and later
 
+#### opencv
+
+- `face-detection` - Runs face detection algorithm on an input image using opencv.
+  \
+  Default repetitions: 100; Supported JVM: 1.8 and later
+
 #### concurrency
 
 - `akka-uct` - Runs the Unbalanced Cobwebbed Tree actor workload in Akka.

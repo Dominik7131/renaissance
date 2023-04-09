@@ -252,6 +252,15 @@ lazy val apacheSparkBenchmarks = (project in file("benchmarks/apache-spark"))
   )
   .dependsOn(renaissanceCore % "provided")
 
+lazy val bytedecoOpencvBenchmarks = (project in file("benchmarks/bytedeco-opencv"))
+  .settings(
+    name := "bytedeco-opencv",
+    libraryDependencies ++= Seq(
+      "org.bytedeco" % "javacv-platform" % "1.5.7"
+    )
+  )
+  .dependsOn(renaissanceCore % "provided")
+
 lazy val databaseBenchmarks = (project in file("benchmarks/database"))
   .settings(
     name := "database",
@@ -437,6 +446,7 @@ val renaissanceBenchmarks: Seq[Project] = Seq(
   actorsAkkaBenchmarks,
   actorsReactorsBenchmarks,
   apacheSparkBenchmarks,
+  bytedecoOpencvBenchmarks,
   databaseBenchmarks,
   jdkConcurrentBenchmarks,
   jdkStreamsBenchmarks,
