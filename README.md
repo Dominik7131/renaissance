@@ -26,7 +26,7 @@ This allows you to execute the following `java` command:
 
 
 ```
-$ java -jar 'renaissance-gpl-0.14.2.jar' <benchmarks>
+$ java -jar 'renaissance-gpl-0.15.0.jar' <benchmarks>
 ```
 
 Above, `<benchmarks>` is the list of benchmarks that you wish to run.
@@ -97,11 +97,11 @@ The following is the complete list of benchmarks, separated into groups.
   \
   Default repetitions: 20; APACHE2 license, MIT distribution; Supported JVM: 1.8 and later
 
-#### opencv
+#### bytedeco-opencv
 
-- `face-detection` - Runs face detection algorithm on an input image using opencv.
+- `face-detection` - A benchmark that detects faces from an input image.
   \
-  Default repetitions: 100; Supported JVM: 1.8 and later
+  Default repetitions: 100;  license, MIT distribution; Supported JVM: 1.8 and later
 
 #### concurrency
 
@@ -274,7 +274,7 @@ arguments to that plugin (or policy).
 The following is a complete list of command-line options.
 
 ```
-Renaissance Benchmark Suite, version 0.14.2
+Renaissance Benchmark Suite, version 0.15.0
 Usage: renaissance [options] [benchmark-specification]
 
   -h, --help               Prints this usage text.
@@ -321,7 +321,7 @@ $ tools/sbt/bin/sbt renaissanceJmhPackage
 To run the benchmarks using JMH, you can execute the following `java` command:
 
 ```
-$ java -jar 'renaissance-jmh/target/renaissance-jmh-0.14.2.jar'
+$ java -jar 'renaissance-jmh/target/renaissance-jmh-0.15.0.jar'
 ```
 
 
