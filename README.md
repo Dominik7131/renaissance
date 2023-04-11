@@ -101,7 +101,7 @@ The following is the complete list of benchmarks, separated into groups.
 
 - `face-detection` - A benchmark that detects faces from an input image.
   \
-  Default repetitions: 100;  license, MIT distribution; Supported JVM: 1.8 and later
+  Default repetitions: 100; APACHE2 license, MIT distribution; Supported JVM: 1.8 and later
 
 #### concurrency
 

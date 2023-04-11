@@ -4,6 +4,7 @@ import org.renaissance.Benchmark;
 import org.renaissance.BenchmarkContext;
 import org.renaissance.BenchmarkResult;
 import org.renaissance.BenchmarkResult.Validators;
+import org.renaissance.License;
 
 import static java.util.Objects.requireNonNull;
 import static org.renaissance.Benchmark.*;
@@ -25,6 +26,7 @@ import static org.bytedeco.opencv.global.opencv_imgcodecs.*;
 @Name("face-detection")
 @Group("bytedeco-opencv")
 @Summary("A benchmark that detects faces from an input image.")
+@Licenses(License.APACHE2)
 @Repetitions(100)
 @Configuration(name = "test")
 public final class FaceDetection implements Benchmark
